@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="See examples of websites built by DesignLab — from local service businesses to freelancer portfolios and dynamic booking sites.">
+  <title>Portfolio — DesignLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="DesignLab home">Design<span>Lab</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button
+          class="nav__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HERO
+         ============================================================ -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">Our Work</h1>
+        <p>We're just getting started — but here's a preview of what we build.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFOLIO GRID
+         PLACEHOLDER: Replace cards with real portfolio items when available
+         ============================================================ -->
+    <section class="section" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="portfolio-heading">Recent Projects</h2>
+          <p>Every site is built from scratch, designed to fit the business it represents.</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <!-- PLACEHOLDER: Replace with real portfolio item -->
+          <article class="portfolio-card">
+            <div class="portfolio-card__thumb portfolio-card__thumb--1" role="img" aria-label="Local Bakery Website preview">
+              <span class="portfolio-card__thumb-text" aria-hidden="true">Bloom</span>
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag portfolio-card__tag--static">Static</span>
+              <h3>Local Bakery Website</h3>
+              <p>A clean, warm site for a neighbourhood bakery — featuring their menu, gallery, and a simple order enquiry form.</p>
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Local Bakery Website project">View Project</a>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real portfolio item -->
+          <article class="portfolio-card">
+            <div class="portfolio-card__thumb portfolio-card__thumb--2" role="img" aria-label="Freelance Photographer Site preview">
+              <span class="portfolio-card__thumb-text" aria-hidden="true">Lens</span>
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag portfolio-card__tag--static">Static</span>
+              <h3>Freelance Photographer Site</h3>
+              <p>A minimal portfolio site showcasing work across weddings, portraits, and commercial photography.</p>
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Freelance Photographer Site project">View Project</a>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real portfolio item -->
+          <article class="portfolio-card">
+            <div class="portfolio-card__thumb portfolio-card__thumb--3" role="img" aria-label="Plumbing Company Landing Page preview">
+              <span class="portfolio-card__thumb-text" aria-hidden="true">Ridge</span>
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag portfolio-card__tag--static">Static</span>
+              <h3>Plumbing Company Landing Page</h3>
+              <p>A high-converting landing page for a local plumber — built to drive calls and contact form submissions.</p>
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Plumbing Company Landing Page project">View Project</a>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real portfolio item -->
+          <article class="portfolio-card">
+            <div class="portfolio-card__thumb portfolio-card__thumb--4" role="img" aria-label="Hair Salon Booking Site preview">
+              <span class="portfolio-card__thumb-text" aria-hidden="true">Salon</span>
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag portfolio-card__tag--dynamic">Dynamic</span>
+              <h3>Hair Salon Booking Site</h3>
+              <p>A dynamic site with an integrated online booking system, service menu, and team profiles for a busy salon.</p>
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Hair Salon Booking Site project">View Project</a>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real portfolio item -->
+          <article class="portfolio-card">
+            <div class="portfolio-card__thumb portfolio-card__thumb--5" role="img" aria-label="Personal Trainer Website preview">
+              <span class="portfolio-card__thumb-text" aria-hidden="true">Fit</span>
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag portfolio-card__tag--static">Static</span>
+              <h3>Personal Trainer Website</h3>
+              <p>A bold, energetic site for an independent personal trainer — showcasing packages, testimonials, and a contact form.</p>
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Personal Trainer Website project">View Project</a>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real portfolio item -->
+          <article class="portfolio-card">
+            <div class="portfolio-card__thumb portfolio-card__thumb--6" role="img" aria-label="Real Estate Agency Site preview">
+              <span class="portfolio-card__thumb-text" aria-hidden="true">Keys</span>
+            </div>
+            <div class="portfolio-card__body">
+              <span class="portfolio-card__tag portfolio-card__tag--dynamic">Dynamic</span>
+              <h3>Real Estate Agency Site</h3>
+              <p>A dynamic multi-page site for a small real estate agency, with a live listings feed, agent profiles, and lead capture forms.</p>
+              <a href="#" class="btn btn-outline btn-sm" aria-label="View Real Estate Agency Site project">View Project</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BOTTOM CTA
+         ============================================================ -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Like What You See?</h2>
+        <p>Let's build something this good for your business. Start with a free consultation.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Book Your Free Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">Design<span>Lab</span></a>
+          <p>Affordable, professional websites<br>built for small businesses.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact-info">
+          <p class="footer__col-title">Get in Touch</p>
+          <p><a href="mailto:hello@designlab.com">hello@designlab.com</a></p>
+          <p>Free consultation available</p>
+          <p style="margin-top: 0.75rem;">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 DesignLab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

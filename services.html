@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="See DesignLab's web design packages and pricing. Static websites from $500, dynamic websites from $2,000. Simple process, affordable prices.">
+  <title>Services — DesignLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="DesignLab home">Design<span>Lab</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button
+          class="nav__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active" aria-current="page">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HERO
+         ============================================================ -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">What We Offer</h1>
+        <p>We work with small businesses and make the whole process simple, transparent, and affordable.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW IT WORKS — FULL DETAIL
+         ============================================================ -->
+    <section class="section section--off-white" aria-labelledby="hiw-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="hiw-heading">Our Process</h2>
+          <p>From your first conversation to a live website — here's exactly how we work.</p>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">1</div>
+            <p class="step-card__badge">Free</p>
+            <h3>Free Consultation Call</h3>
+            <p>
+              We start with a free 30-minute call. You tell us about your business, your
+              preferred colours and typography, who your customers are, and what you need
+              from your website. No preparation needed — just show up and chat.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">2</div>
+            <p class="step-card__badge">Free</p>
+            <h3>Free Mockup</h3>
+            <p>
+              Based on your consultation, we design a custom mockup and send it to you
+              at no cost. This gives you a real visual before you commit to anything.
+              No templates, no guesswork — designed specifically for your business.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">3</div>
+            <p class="step-card__badge">$100</p>
+            <h3>Revision Call</h3>
+            <p>
+              If you'd like to move forward, you pay a flat $100 fee for a follow-up
+              call. We go over the mockup together, answer all your questions, discuss
+              any changes, and finalise the direction before a single line of code is written.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">4</div>
+            <p class="step-card__badge">$500–$5,000</p>
+            <h3>Website Build</h3>
+            <p>
+              Once the plan is locked in, we build. Static sites take 1–2 weeks and
+              start at $500. Dynamic sites with booking systems, CMS, or custom features
+              start at $2,000 and typically take 3–6 weeks.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">5</div>
+            <p class="step-card__badge">Free</p>
+            <h3>Review &amp; Invoice</h3>
+            <p>
+              We show you the finished website. You review it, request any final tweaks,
+              and give us the green light. Only once you're happy do we send the invoice.
+              You love it first — you pay after.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">6</div>
+            <p class="step-card__badge">Optional — $30/month</p>
+            <h3>Monthly Maintenance</h3>
+            <p>
+              After launch, we offer an optional ongoing maintenance plan: bug fixes,
+              small content updates, security checks, and peace of mind that someone
+              is looking after your site so you don't have to.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICE TIERS — FULL DETAILS
+         ============================================================ -->
+    <section class="section" aria-labelledby="packages-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="packages-heading">Packages &amp; Pricing</h2>
+          <p>Both tiers include a free consultation and free mockup before you spend a dollar.</p>
+        </div>
+
+        <!-- Static Website -->
+        <div class="service-detail-card">
+          <div class="service-detail-card__header">
+            <h3>Static Website</h3>
+            <span class="price-badge">$500 – $1,000</span>
+          </div>
+
+          <div class="service-meta">
+            <span><strong>Best for:</strong> Local businesses, freelancers, personal brands</span>
+            <span><strong>Timeline:</strong> Approximately 1–2 weeks</span>
+          </div>
+
+          <p>
+            A static website is fast, reliable, and professional. It's the perfect starting
+            point for any small business that needs a strong online presence — whether that's
+            a landing page, a portfolio, or a multi-page business site.
+          </p>
+
+          <ul class="service-features-list" aria-label="Static website features">
+            <li>Up to 5 pages</li>
+            <li>Fully mobile responsive</li>
+            <li>Contact form</li>
+            <li>SEO basics (title tags, meta descriptions, alt text)</li>
+            <li>Fast load times</li>
+            <li>1 round of revisions included</li>
+            <li>Clean, professional design</li>
+            <li>Browser tested</li>
+          </ul>
+
+          <a href="contact.html" class="btn btn-outline">Get Started with Static</a>
+        </div>
+
+        <!-- Dynamic Website -->
+        <div class="service-detail-card">
+          <div class="service-detail-card__header">
+            <h3>Dynamic Website</h3>
+            <span class="price-badge">$2,000 – $5,000</span>
+          </div>
+
+          <div class="service-meta">
+            <span><strong>Best for:</strong> Businesses needing bookings, logins, or automation</span>
+            <span><strong>Timeline:</strong> Approximately 3–6 weeks</span>
+          </div>
+
+          <p>
+            A dynamic website is built for businesses that need more than a digital brochure.
+            If you need clients to book appointments online, you want to manage your own content,
+            or you need custom automation — this is the tier for you. Every feature is discussed
+            and planned during your consultation so there are no surprises.
+          </p>
+
+          <ul class="service-features-list" aria-label="Dynamic website features">
+            <li>Everything in Static</li>
+            <li>Online booking systems</li>
+            <li>CMS integration (manage your own content)</li>
+            <li>Advanced contact forms</li>
+            <li>Automation &amp; integrations</li>
+            <li>Custom functionality (discussed in consultation)</li>
+            <li>Multiple revision rounds</li>
+            <li>Priority support during build</li>
+          </ul>
+
+          <a href="contact.html" class="btn btn-primary">Get Started with Dynamic</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ADD-ONS
+         ============================================================ -->
+    <section class="section section--off-white" aria-labelledby="addons-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="addons-heading">Add-Ons</h2>
+          <p>Optional extras you can add to any package.</p>
+        </div>
+
+        <div class="addons-grid">
+
+          <div class="addon-card">
+            <p class="addon-card__price">$30<span style="font-size: 1rem; font-weight: 400; color: var(--color-text-muted);">/month</span></p>
+            <h4>Monthly Maintenance</h4>
+            <p>Bug fixes, small content updates, and keeping your site running smoothly. Peace of mind for $1 a day.</p>
+          </div>
+
+          <div class="addon-card addon-card--muted">
+            <span class="coming-soon-chip">Coming Soon</span>
+            <p class="addon-card__price" style="color: var(--color-text-muted);">TBD</p>
+            <h4>SEO Setup</h4>
+            <p>Keyword research, on-page optimisation, and Google Search Console setup to help people find your business.</p>
+          </div>
+
+          <div class="addon-card addon-card--muted">
+            <span class="coming-soon-chip">Coming Soon</span>
+            <p class="addon-card__price" style="color: var(--color-text-muted);">TBD</p>
+            <h4>Copywriting</h4>
+            <p>Professional website copy written for you — so you never have to stare at a blank page wondering what to say.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BOTTOM CTA
+         ============================================================ -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Not Sure Which Package Is Right for You?</h2>
+        <p>Book a free call and we'll help you figure it out — no pressure, no commitment.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Book Your Free Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">Design<span>Lab</span></a>
+          <p>Affordable, professional websites<br>built for small businesses.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact-info">
+          <p class="footer__col-title">Get in Touch</p>
+          <p><a href="mailto:hello@designlab.com">hello@designlab.com</a></p>
+          <p>Free consultation available</p>
+          <p style="margin-top: 0.75rem;">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 DesignLab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

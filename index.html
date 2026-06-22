@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DesignLab builds affordable, professional websites for small businesses. Book a free consultation today — no commitment required.">
+  <title>DesignLab — Websites That Work for Small Businesses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="DesignLab home">Design<span>Lab</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button
+          class="nav__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__eyebrow">Web Design for Small Businesses</span>
+          <h1>Your Business Deserves a Website That Works</h1>
+          <p class="hero__sub">
+            We build affordable, professional websites for small businesses —
+            so you can focus on what you do best.
+          </p>
+          <div class="hero__actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Book a Free Call</a>
+            <a href="portfolio.html" class="btn btn-secondary btn-lg">See Our Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRUST BAR
+         ============================================================ -->
+    <div class="trust-bar" aria-label="Key facts">
+      <div class="container">
+        <ul class="trust-bar__items" role="list">
+          <li class="trust-bar__item">Free initial consultation</li>
+          <li class="trust-bar__item">No website? No problem</li>
+          <li class="trust-bar__item">Websites from $500</li>
+          <li class="trust-bar__item">Ongoing support available</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         HOW IT WORKS
+         ============================================================ -->
+    <section class="section section--off-white" id="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="hiw-heading">How It Works</h2>
+          <p>Six simple steps — from your first call to a live, professional website.</p>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">1</div>
+            <p class="step-card__badge">Free</p>
+            <h3>Free Consultation Call</h3>
+            <p>Tell us about your business, your preferred style, and what you need from your website. No commitment required.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">2</div>
+            <p class="step-card__badge">Free</p>
+            <h3>Free Mockup</h3>
+            <p>We design a custom mockup based on your consultation and send it to you at no cost.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">3</div>
+            <p class="step-card__badge">$100</p>
+            <h3>Revision Call</h3>
+            <p>Ready to move forward? Pay $100 for a follow-up call to refine the direction, answer questions, and lock in the plan.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">4</div>
+            <p class="step-card__badge">$500–$5,000</p>
+            <h3>Website Build</h3>
+            <p>We build your website. Static sites start at $500; dynamic sites with advanced features start at $2,000.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">5</div>
+            <p class="step-card__badge">Free</p>
+            <h3>Review &amp; Invoice</h3>
+            <p>We show you the finished site, you approve it, and then we send the invoice. You love it first, pay after.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-card__number" aria-hidden="true">6</div>
+            <p class="step-card__badge">Optional — $30/mo</p>
+            <h3>Monthly Maintenance</h3>
+            <p>After launch we offer ongoing support: bug fixes, small updates, and keeping your site running smoothly.</p>
+          </article>
+
+        </div>
+
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a href="services.html" class="btn btn-outline">See Full Pricing Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES OVERVIEW
+         ============================================================ -->
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="services-heading">What We Build</h2>
+          <p>Two tiers designed to fit your business and budget — both built with care.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <p class="service-card__label">Static Website</p>
+            <p class="service-card__price">$500–$1,000</p>
+            <p class="service-card__price-note">One-time project fee</p>
+            <h3>Clean, Fast &amp; Professional</h3>
+            <p class="service-card__desc">
+              The perfect starting point. Simple, fast, and professional — great for businesses
+              that need a strong online presence, a portfolio, or a landing page.
+            </p>
+            <ul class="service-card__features" aria-label="Static website includes">
+              <li>Up to 5 pages</li>
+              <li>Mobile responsive</li>
+              <li>Contact form</li>
+              <li>SEO basics</li>
+              <li>Fast load times</li>
+              <li>1 round of revisions</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Get Started</a>
+          </article>
+
+          <article class="service-card service-card--featured">
+            <p class="service-card__label">Dynamic Website</p>
+            <p class="service-card__price">$2,000–$5,000</p>
+            <p class="service-card__price-note">One-time project fee</p>
+            <h3>Powerful &amp; Feature-Rich</h3>
+            <p class="service-card__desc">
+              Built for businesses that need more. Booking systems, contact forms, content
+              management, and automation — all discussed and planned in your consultation.
+            </p>
+            <ul class="service-card__features" aria-label="Dynamic website includes">
+              <li>Everything in Static</li>
+              <li>Booking systems</li>
+              <li>CMS integration</li>
+              <li>Custom forms &amp; automation</li>
+              <li>Advanced functionality</li>
+              <li>3–6 week timeline</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS
+         PLACEHOLDER: Replace with real testimonials when available
+         ============================================================ -->
+    <section class="section section--off-white" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="testimonials-heading">What Clients Say</h2>
+          <p>Small business owners who trusted us to build their online presence.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- PLACEHOLDER: Replace with real testimonial -->
+          <article class="testimonial-card">
+            <span class="testimonial-card__mark" aria-hidden="true">"</span>
+            <p class="testimonial-card__quote">
+              Working with DesignLab was the easiest decision I made for my business.
+              They took something that felt overwhelming and made it completely stress-free.
+              My new site has already brought in three new customers.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">SB</div>
+              <div>
+                <span class="testimonial-card__name">Sarah B.</span>
+                <span class="testimonial-card__role">Owner, Bloom Floral Studio</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real testimonial -->
+          <article class="testimonial-card">
+            <span class="testimonial-card__mark" aria-hidden="true">"</span>
+            <p class="testimonial-card__quote">
+              I had no idea where to start with a website. Julia and Michael walked me
+              through every step. The free mockup alone blew me away — I knew right away
+              these were the people I wanted to work with.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+              <div>
+                <span class="testimonial-card__name">Marcus R.</span>
+                <span class="testimonial-card__role">Owner, Ridge Line Landscaping</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: Replace with real testimonial -->
+          <article class="testimonial-card">
+            <span class="testimonial-card__mark" aria-hidden="true">"</span>
+            <p class="testimonial-card__quote">
+              Affordable, fast, and they actually listened. My old website was embarrassing —
+              my new one makes me look like a real business. Couldn't be happier with
+              the whole process.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">AT</div>
+              <div>
+                <span class="testimonial-card__name">Amanda T.</span>
+                <span class="testimonial-card__role">Freelance Photographer</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FINAL CTA
+         ============================================================ -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to Get Online?</h2>
+        <p>Book a free 30-minute call and we'll start planning your website — no commitment required.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Book Your Free Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">Design<span>Lab</span></a>
+          <p>Affordable, professional websites<br>built for small businesses.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact-info">
+          <p class="footer__col-title">Get in Touch</p>
+          <p><a href="mailto:hello@designlab.com">hello@designlab.com</a></p>
+          <p>Free consultation available</p>
+          <p style="margin-top: 0.75rem;">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 DesignLab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a free consultation with DesignLab or send us a message. We'll get back to you within 1 business day.">
+  <title>Contact — DesignLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="DesignLab home">Design<span>Lab</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+
+        <button
+          class="nav__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HERO
+         ============================================================ -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">Let's Talk</h1>
+        <p>Book a free consultation or send us a message.<br>We'll get back to you within 1 business day.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT FORM & ASIDE
+         ============================================================ -->
+    <section class="section" aria-label="Contact form">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Form -->
+          <div>
+            <div class="form-card">
+              <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send Us a Message</h2>
+
+              <!--
+                NOTE: Connect this form to a backend or service like Formspree,
+                Netlify Forms, or EmailJS before going live.
+              -->
+              <form id="contact-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full-name"
+                      placeholder="Jane Smith"
+                      required
+                      autocomplete="name"
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="jane@yourbusiness.com"
+                      required
+                      autocomplete="email"
+                    >
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="business-name">
+                      Business Name
+                      <span class="optional">(optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="business-name"
+                      name="business-name"
+                      placeholder="Your Business Name"
+                      autocomplete="organization"
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">
+                      Phone Number
+                      <span class="optional">(optional)</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="(555) 000-0000"
+                      autocomplete="tel"
+                    >
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="website-type">What type of website are you interested in?</label>
+                  <select id="website-type" name="website-type">
+                    <option value="">— Select an option —</option>
+                    <option value="static">Static Website ($500–$1,000)</option>
+                    <option value="dynamic">Dynamic Website ($2,000–$5,000)</option>
+                    <option value="unsure">Not Sure Yet</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Tell us about your project <span aria-hidden="true">*</span></label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="What does your business do? Do you have an existing website? Any ideas about design or features you'd like?"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </div>
+
+                <!-- Shown after successful submission -->
+                <div class="form-success" id="form-success" role="alert" aria-live="polite">
+                  ✓ Thanks! We've received your message and will be in touch within 1 business day.
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- Aside column -->
+          <div class="contact-aside">
+
+            <div class="aside-card">
+              <h3>Prefer to email us directly?</h3>
+              <p>
+                You can reach us any time at<br>
+                <a href="mailto:hello@designlab.com">hello@designlab.com</a>
+              </p>
+            </div>
+
+            <div class="aside-card aside-card--navy">
+              <h3>What's included in the free call?</h3>
+              <p>
+                Your free consultation is a 30-minute call where we learn about your business,
+                your goals, and your style preferences. We'll start sketching a plan for your
+                website — and there's absolutely no commitment required.
+              </p>
+            </div>
+
+            <div class="aside-card">
+              <h3>What happens next?</h3>
+              <p>
+                After your call we'll design a free mockup based on what we discussed and
+                send it to you within a few days. You only move forward if you love what you see.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">Design<span>Lab</span></a>
+          <p>Affordable, professional websites<br>built for small businesses.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact-info">
+          <p class="footer__col-title">Get in Touch</p>
+          <p><a href="mailto:hello@designlab.com">hello@designlab.com</a></p>
+          <p>Free consultation available</p>
+          <p style="margin-top: 0.75rem;">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 DesignLab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
