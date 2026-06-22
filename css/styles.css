@@ -220,6 +220,160 @@ p:last-child {
   margin: 1rem auto 0;
 }
 
+/* === HERO FLOATING SHAPES === */
+@keyframes heroFloat1 {
+  0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+  25%       { transform: translate(18px, -22px) rotate(90deg); }
+  50%       { transform: translate(-12px, -16px) rotate(180deg); }
+  75%       { transform: translate(-20px, 10px) rotate(270deg); }
+}
+
+@keyframes heroFloat2 {
+  0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+  33%       { transform: translate(-24px, 18px) rotate(-120deg); }
+  66%       { transform: translate(16px, 26px) rotate(-240deg); }
+}
+
+@keyframes heroFloat3 {
+  0%, 100% { transform: translate(0px, 0px); }
+  50%       { transform: translate(12px, -30px); }
+}
+
+@keyframes heroSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes heroSpinReverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+@keyframes heroPulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.1); }
+}
+
+.hero__shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Thin rotating rings */
+.hero__ring {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hero__ring--1 {
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(201, 169, 126, 0.07);
+  top: -160px;
+  right: -80px;
+  animation: heroSpin 55s linear infinite;
+}
+
+/* Inner offset ring inside ring-1 — gives it depth */
+.hero__ring--1::after {
+  content: '';
+  position: absolute;
+  inset: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 126, 0.04);
+}
+
+.hero__ring--2 {
+  width: 320px;
+  height: 320px;
+  border: 1px solid rgba(201, 169, 126, 0.09);
+  bottom: -80px;
+  left: 4%;
+  animation: heroSpinReverse 38s linear infinite;
+}
+
+.hero__ring--3 {
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(201, 169, 126, 0.06);
+  top: 38%;
+  left: 12%;
+  animation: heroSpin 22s linear infinite;
+}
+
+/* Soft glowing orbs */
+.hero__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.hero__orb--1 {
+  width: 640px;
+  height: 640px;
+  background: radial-gradient(circle, rgba(30, 90, 68, 0.14) 0%, transparent 68%);
+  top: -280px;
+  left: -160px;
+  animation: heroFloat1 16s ease-in-out infinite;
+}
+
+.hero__orb--2 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(201, 169, 126, 0.07) 0%, transparent 65%);
+  bottom: -140px;
+  right: 2%;
+  animation: heroFloat2 12s ease-in-out infinite 1.5s;
+}
+
+.hero__orb--3 {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(34, 110, 80, 0.09) 0%, transparent 70%);
+  top: 20%;
+  right: 14%;
+  animation: heroFloat3 9s ease-in-out infinite 3s;
+}
+
+/* Small accent dots */
+.hero__dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.hero__dot--1 {
+  top: 22%;
+  left: 18%;
+  opacity: 0.3;
+  animation: heroPulse 4s ease-in-out infinite;
+}
+
+.hero__dot--2 {
+  top: 65%;
+  right: 22%;
+  opacity: 0.2;
+  animation: heroPulse 6s ease-in-out infinite 1s;
+}
+
+.hero__dot--3 {
+  top: 40%;
+  left: 6%;
+  opacity: 0.25;
+  animation: heroPulse 5s ease-in-out infinite 2.5s;
+}
+
+/* Ensure hero content sits above shapes */
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
 /* === SCROLL REVEAL === */
 @keyframes heroFadeUp {
   from { opacity: 0; transform: translateY(22px); }

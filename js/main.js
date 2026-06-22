@@ -64,6 +64,27 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ============================================================
+     HERO FLOATING SHAPES
+     ============================================================ */
+  var hero = document.querySelector('.hero');
+  if (hero) {
+    var shapesEl = document.createElement('div');
+    shapesEl.className = 'hero__shapes';
+    shapesEl.setAttribute('aria-hidden', 'true');
+    shapesEl.innerHTML =
+      '<div class="hero__orb  hero__orb--1"></div>' +
+      '<div class="hero__orb  hero__orb--2"></div>' +
+      '<div class="hero__orb  hero__orb--3"></div>' +
+      '<div class="hero__ring hero__ring--1"></div>' +
+      '<div class="hero__ring hero__ring--2"></div>' +
+      '<div class="hero__ring hero__ring--3"></div>' +
+      '<div class="hero__dot  hero__dot--1"></div>' +
+      '<div class="hero__dot  hero__dot--2"></div>' +
+      '<div class="hero__dot  hero__dot--3"></div>';
+    hero.insertBefore(shapesEl, hero.firstChild);
+  }
+
+  /* ============================================================
      SCROLL REVEAL
      Elements fade-up as they enter the viewport.
      Grid siblings stagger automatically.
